@@ -5,7 +5,7 @@
 ## 1. Cấu trúc thư mục
 
 ```text
-candidate_screening_analysis/
+project/
 ├── app.py                        # Ứng dụng giao diện Streamlit (7 tab)
 ├── data/
 │   └── candidates_full.csv       # Tập dữ liệu 12.000 ứng viên IT
