@@ -1,4 +1,10 @@
-# Python cache
+# Local Python environment
+venv/
+.venv/
+env/
+
+# Test cache
+.pytest_cache/# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
