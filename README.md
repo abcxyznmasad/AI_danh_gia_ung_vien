@@ -20,3 +20,36 @@ project/
 │   └── test_analysis.py          # Unit test cho các hàm thống kê & kiểm định
 ├── requirements.txt              # Danh sách thư viện với phiên bản cố định
 └── README.md                     # Hướng dẫn cài đặt và chạy dự án
+
+## Hướng dẫn cài đặt và chạy dự án
+
+### Yêu cầu
+
+- Windows 10/11.
+- Python đã được cài đặt và có thể chạy bằng lệnh `python`.
+- Kết nối Internet khi cài đặt thư viện.
+
+### Cài đặt tự động
+
+1. Tải hoặc sao chép mã nguồn dự án về máy.
+2. Mở thư mục gốc chứa `app.py` và `requirements.txt`.
+3. Chạy file `setup.bat`.
+4. Chờ quá trình cài thư viện và kiểm thử hoàn tất.
+
+File `setup.bat` sẽ tự tạo môi trường ảo `venv` nếu cần, cài đặt các thư viện được khai báo trong `requirements.txt` và chạy bộ kiểm thử tự động.
+
+### Khởi chạy ứng dụng
+
+Mở PowerShell tại thư mục gốc dự án và chạy:
+
+```powershell
+venv\Scripts\python.exe -m streamlit run app.py
+```
+
+Sau đó mở địa chỉ Local URL được Streamlit hiển thị trên terminal.
+
+### Chạy kiểm thử
+
+```powershell
+venv\Scripts\python.exe -m pytest -v
+```
