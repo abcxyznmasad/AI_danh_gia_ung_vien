@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Đánh giá Quy trình Sàng lọc Ứng viên IT: Tính Nhất quán, Công bằng và Dự đoán Mức Phù hợp bằng Python
 
 Đồ án môn **Python Ứng dụng** thực hiện kiểm toán dữ liệu tuyển dụng IT (`12.000` hồ sơ, `20` vị trí công việc, `28` thuộc tính) thông qua phân tích thống kê chuyên sâu và mô hình học máy có khả năng diễn giải.
@@ -20,3 +21,6 @@ candidate_screening_analysis/
 │   └── test_analysis.py          # Unit test cho các hàm thống kê & kiểm định
 ├── requirements.txt              # Danh sách thư viện với phiên bản cố định
 └── README.md                     # Hướng dẫn cài đặt và chạy dự án
+=======
+# AI_danh_gia_ung_vien
+>>>>>>> 60f9ffa34bc9c052d2e4570632b17c9639f6a482
