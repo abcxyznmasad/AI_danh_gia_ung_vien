@@ -35,9 +35,9 @@ if not exist "venv\Scripts\python.exe" (
         echo [LOI] Khong the tao venv.
         goto ERROR_EXIT
     )
-    echo -> Da tao venv thanh cong.
+    echo [OK] Da tao venv thanh cong.
 ) else (
-    echo -> Moi truong ao venv da ton tai.
+    echo [OK] Moi truong ao venv da ton tai.
 )
 
 :: 4. Kich hoat venv va cai dat thu vien
