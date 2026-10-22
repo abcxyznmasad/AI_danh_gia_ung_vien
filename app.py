@@ -82,11 +82,7 @@ def get_models_and_shap(_df: pd.DataFrame) -> Dict[str, Any]:
 
 def main() -> None:
     """Hàm điều phối hiển thị 7 tab giao diện theo đúng cấu trúc yêu cầu."""
-    st.title("📊 Đánh giá Quy trình Sàng lọc Ứng viên IT: Tính Nhất quán, Công bằng & Dự đoán Mức Phù hợp")
-    st.caption(
-        "Đồ án môn Python Ứng dụng — Phân tích chuyên sâu trên tập dữ liệu 12.000 hồ sơ ứng viên IT "
-        "(Lưu ý: Dữ liệu có đặc tính sinh tổng hợp phục vụ học thuật, không đại diện cho sự thật thị trường)."
-    )
+    st.title("Phân tích tuyển dụng IT: Đánh giá Quy trình Sàng lọc ứng viên")
 
     try:
         df = get_clean_dataset(DATA_REL_PATH)
