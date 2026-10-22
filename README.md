@@ -35,6 +35,8 @@ project/
 2. Mở thư mục gốc chứa `app.py` và `requirements.txt`.
 3. Chạy file `setup.bat`.
 4. Chờ quá trình cài thư viện và kiểm thử hoàn tất.
+```
+## File `setup.bat` sẽ tự tạo môi trường ảo `venv` nếu cần, cài đặt các thư viện được khai báo trong `requirements.txt` và chạy bộ kiểm thử tự động, sau đó giao diện web sẽ tự bật lên.
 
-###File `setup.bat` sẽ tự tạo môi trường ảo `venv` nếu cần, cài đặt các thư viện được khai báo trong `requirements.txt` và chạy bộ kiểm thử tự động.
+
 
