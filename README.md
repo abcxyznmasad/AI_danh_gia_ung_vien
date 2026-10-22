@@ -36,20 +36,5 @@ project/
 3. Chạy file `setup.bat`.
 4. Chờ quá trình cài thư viện và kiểm thử hoàn tất.
 
-File `setup.bat` sẽ tự tạo môi trường ảo `venv` nếu cần, cài đặt các thư viện được khai báo trong `requirements.txt` và chạy bộ kiểm thử tự động.
+###File `setup.bat` sẽ tự tạo môi trường ảo `venv` nếu cần, cài đặt các thư viện được khai báo trong `requirements.txt` và chạy bộ kiểm thử tự động.
 
-### Khởi chạy ứng dụng
-
-Mở PowerShell tại thư mục gốc dự án và chạy:
-
-```powershell
-venv\Scripts\python.exe -m streamlit run app.py
-```
-
-Sau đó mở địa chỉ Local URL được Streamlit hiển thị trên terminal.
-
-### Chạy kiểm thử
-
-```powershell
-venv\Scripts\python.exe -m pytest -v
-```
