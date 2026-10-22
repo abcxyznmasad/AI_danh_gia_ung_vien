@@ -461,8 +461,9 @@ def main() -> None:
                 k3.metric("Xác suất dự đoán (P(Nhãn >= 2))", f"{exp_res['pred_prob'] * 100:.2f}%")
                 k4.metric("Kết luận của Mô hình", "Phù hợp (>= 2)" if exp_res["pred_class"] == 1 else "Chưa phù hợp (< 2)")
 
-                st.subheader(f"Biểu đồ SHAP Waterfall cho ứng viên {lookup_id}")
-                render_figure(plot_shap_waterfall(exp_res["shap_explanation_single"]))
+                fig = plot_shap_waterfall(exp_res["shap_explanation_single"])
+                st.pyplot(fig, use_container_width=False)
+                plt.close(fig)
 
                 st.subheader("Bảng chi tiết đóng góp SHAP của từng đặc trưng")
                 st.markdown(

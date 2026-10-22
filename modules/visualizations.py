@@ -13,7 +13,7 @@ def plot_css_distribution(df: pd.DataFrame) -> plt.Figure:
     """Vẽ biểu đồ phân phối (Histogram + KDE) của điểm CSS thực tế."""
     fig, ax = plt.subplots(figsize=(10, 4.5))
     sns.histplot(data=df, x="CSS", kde=True, color="teal", bins=40, ax=ax)
-    ax.set_title("Phân phối Điểm Candidate Success Score (CSS)", fontsize=13, fontweight="bold")
+    ax.set_title("Phân phối Điểm Candidate Suitability Score — (CSS)", fontsize=13, fontweight="bold")
     ax.set_xlabel("Điểm CSS")
     ax.set_ylabel("Số lượng ứng viên")
     ax.xaxis.set_major_locator(ticker.MultipleLocator(0.05))
@@ -180,8 +180,8 @@ def plot_shap_waterfall(shap_explanation_single: Any) -> plt.Figure:
     gọi shap.plots.waterfall(..., show=False), và lấy đúng figure hiện hành bằng plt.gcf().
     """
     plt.close("all")
-    shap.plots.waterfall(shap_explanation_single, max_display=12, show=False)
+    shap.plots.waterfall(shap_explanation_single, max_display=7, show=False)
     fig = plt.gcf()
-    fig.set_size_inches(9.5, 5.5)
+    fig.set_size_inches(9.5, 3.5)
     fig.tight_layout()
     return fig
